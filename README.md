@@ -51,5 +51,5 @@ Todas las peticiones a rutas protegidas se registran en MongoDB (colección `log
 Accede a `https://tu-api.vercel.app/api-docs`
 
 ## Enlaces
-- Repositorio: https://github.com/SofiaSorairte/TP-integrador-del-modulo-5--api-segura
-- API desplegada: https://tp-integrador-del-modulo-5-api-segura.vercel.app
+- Repositorio: https://github.com/SofiaSoraire/TP-integrador-del-modulo-5--api-segura
+- API desplegada: https://tp-integrador-del-modulo-5-api-segu.vercel.app/
