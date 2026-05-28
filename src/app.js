@@ -38,10 +38,5 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Error interno del servidor' });
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`✅ Servidor corriendo en puerto ${PORT}`);
-  console.log(`📚 Documentación Swagger: http://localhost:${PORT}/api-docs`);
-});
-
+// 👇 SOLO EXPORTA, NO ESCUCHES
 module.exports = app;
