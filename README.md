@@ -21,21 +21,22 @@ API con autenticación JWT, rate limiting, logging y documentación Swagger.
 
 ### POST /api/auth/register
 Registra un nuevo usuario.
+- **URL**: `http://localhost:3001/api/auth/register`
+- **Método**: `POST`
 - **Body**: `{ "name": "Juan", "email": "juan@mail.com", "password": "123456" }`
 - **Respuesta 201**: `{ "message": "...", "token": "...", "user": {...} }`
-- **Errores**: 400 (email ya registrado), 500.
+- **Errores**: 400 (email ya registrado), 500(Error interno).
+
 
 ### POST /api/auth/login
 Inicia sesión (requiere email verificado).
+-**URL**: `http://localhost:3001/api/auth/login`
+- **Método**: `POST`
+- **Body**: `{"email": "juan@mail.com", "password": "123456" }`
 - **Body**: `{ "email": "...", "password": "..." }`
 - **Respuesta 200**: `{ "message": "...", "token": "...", "user": {...} }`
-- **Errores**: 401 (email no verificado o credenciales inválidas).
+- **Errores**: 401 (credenciales inválidas).
 
-### GET /api/profile
-Obtiene el perfil del usuario autenticado.
-- **Header**: `Authorization: Bearer <token>`
-- **Respuesta 200**: `{ "success": true, "user": {...} }`
-- **Errores**: 401 (token inválido), 429 (rate limit).
 
 ## Rate Limiting
 Cada usuario puede hacer 100 peticiones por hora a rutas protegidas. Al exceder, recibe 429.
