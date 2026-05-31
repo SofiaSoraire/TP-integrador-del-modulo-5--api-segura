@@ -49,7 +49,7 @@ Cada usuario puede hacer 100 peticiones por hora a rutas protegidas. Al exceder,
 Todas las peticiones a rutas protegidas se registran en MongoDB (colección `logs`), excepto `/login` y `/register`.
 
 ## Documentación Swagger
-Accede a `https://tu-api.vercel.app/api-docs`
+Accede a `https://tp-integrador-del-modulo-5-api-segura.vercel.app/api-docs`
 
 ## Enlaces
 - Repositorio: https://github.com/SofiaSoraire/TP-integrador-del-modulo-5--api-segura
